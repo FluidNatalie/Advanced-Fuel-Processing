@@ -150,3 +150,4 @@ local SolidFuelExperimentationResearch = {
 table.insert(data.raw.technology["rocket-fuel"].effects,{type = "unlock-recipe",recipe = "llr-rocket-fuel"})
 
 data:extend{VehicleFuel, SolidHeavyOil, SolidHeavyOilRecipe, SolidLightOil, SolidLightOilRecipe, SolidCoal, SolidCoalRecipe, llrRocketFuel, llrRocketFuelRecipe}
+--adding a comment for testing porpurses
