@@ -132,7 +132,7 @@ local SolidFuelExperimentationResearch = {
     },
     {
         type = "unlock-recipe",
-        recipe="solid-light-oil"
+        recipe = "solid-light-oil"
     }
   },
   unit =
