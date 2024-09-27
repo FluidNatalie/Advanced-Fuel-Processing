@@ -102,6 +102,7 @@ local CoalExperimentationResearch = {
   name = "Coal-experimentation-research",
   icon = "__AdvancedFuelProcessing__/graphics/Solid_coal.png",
   icon_size = 64, icon_mipmaps = 4,
+  visible_when_disabled = true,
   prerequistes = {"automobilism", "railway"},
   effects =
   {
@@ -123,6 +124,7 @@ local SolidFuelExperimentationResearch = {
   name = "Solid-fuel-experimentation-research",
   icon = "__AdvancedFuelProcessing__/graphics/Solid_fuel.png",
   icon_size = 64, icon_mipmaps = 4,
+  visible_when_disabled = true,
   prerequistes = {"advanced-oil-processing"},
   effects =
   {
