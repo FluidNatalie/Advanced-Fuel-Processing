@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-09-19
+  Changes:
+    - Changed the recipe for "Refined solid fuel" significantly
+    - Changed the fuel values of "Refined solid fuel" to make it less overpowered
+    - Changed the crafting time of "Refined solid fuel" to 20 seconds from 0.5 seconds
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-07-11
+  Features:
+    - Initial release. 
+    - Readded the rocket fuel item and recipe for use in trains and other vehicles or machines.
