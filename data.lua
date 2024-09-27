@@ -6,8 +6,8 @@ local VehicleFuel = {
 local SolidHeavyOil = {
     type = "item",
     name = "solid-heavy-oil",
-    icon = "__core__/graphics/empty.png", --make a suitable icon -- PLACEHOLDER
-    icon_size = 1, icon_mipmaps = 4, -- PLACEHOLDER
+    icon = "__AdvancedFuelProcessing__/graphics/Solid_heavy_oil.png",
+    icon_size = 64, icon_mipmaps = 4,
     fuel_category = "vehicle-fuel",
     fuel_value = "20MJ",
     fuel_acceleration_multiplier = 2.00,
@@ -29,8 +29,8 @@ local SolidHeavyOilRecipe = {
 local SolidLightOil = {
     type = "item",
     name = "solid-light-oil",
-    icon = "__core__/graphics/empty.png", --make a suitable icon -- PLACEHOLDER
-    icon_size = 1, icon_mipmaps = 4, -- PLACEHOLDER
+    icon = "__AdvancedFuelProcessing__/graphics/Solid_light_oil.png",
+    icon_size = 64, icon_mipmaps = 4,
     fuel_category = "vehicle-fuel",
     fuel_value = "6MJ",
     fuel_acceleration_multiplier = 1.60,
@@ -53,8 +53,8 @@ local SolidLightOilRecipe = {
 local SolidCoal = {
     type = "item",
     name = "solid-coal",
-    icon = "__core__/graphics/empty.png", --make a suitable icon -- PLACEHOLDER
-    icon_size = 1, icon_mipmaps = 4, -- PLACEHOLDER
+    icon = "__AdvancedFuelProcessing__/graphics/Solid_coal.png",
+    icon_size = 64, icon_mipmaps = 4,
     fuel_category = "vehicle-fuel",
     fuel_value = "40MJ",
     fuel_acceleration_multiplier = 1.00,
@@ -100,9 +100,8 @@ local llrRocketFuelRecipe = {
 local CoalExperimentationResearch = {
     type = "technology",
   name = "Coal-experimentation-research",
-  icon_size = 1, --change if needed -- PLACEHOLDER
-  icon_mipmaps = 4, -- change if needed
-  icon = "__core__/graphics/empty.png", --make a icon -- PLACEHOLDER
+  icon = "__AdvancedFuelProcessing__/graphics/Solid_coal.png",
+  icon_size = 64, icon_mipmaps = 4,
   prerequistes = {"automobilism", "railway"},
   effects =
   {
@@ -122,9 +121,8 @@ local CoalExperimentationResearch = {
 local SolidFuelExperimentationResearch = {
     type = "technology",
   name = "Solid-fuel-experimentation-research",
-  icon_size = 1, --change if needed -- PLACEHOLDER
-  icon_mipmaps = 4, -- change if needed
-  icon = "__core__/graphics/empty.png", --make a icon -- PLACEHOLDER
+  icon = "__AdvancedFuelProcessing__/graphics/Solid_fuel.png",
+  icon_size = 64, icon_mipmaps = 4,
   prerequistes = {"advanced-oil-processing"},
   effects =
   {
@@ -150,4 +148,3 @@ local SolidFuelExperimentationResearch = {
 table.insert(data.raw.technology["rocket-fuel"].effects,{type = "unlock-recipe",recipe = "llr-rocket-fuel"})
 
 data:extend{VehicleFuel, SolidHeavyOil, SolidHeavyOilRecipe, SolidLightOil, SolidLightOilRecipe, SolidCoal, SolidCoalRecipe, llrRocketFuel, llrRocketFuelRecipe}
---adding a comment for testing porpurses
