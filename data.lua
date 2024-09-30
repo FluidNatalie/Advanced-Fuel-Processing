@@ -100,23 +100,38 @@ local llrRocketFuelRecipe = {
 local SpoiledPlastic = {
   type = "item",
   name = "spoiled-plastic",
-  icon = "__AdvancedFuelProcessing__/graphics/Spoiled_plastic_bar.png"
+  icon = "__AdvancedFuelProcessing__/graphics/Spoiled_plastic_bar.png",
   icon_size = 64, icon_mipmaps = 4,
   stack_size = 100
 }
 
-local HeavyOilPlaticsRecipe = {
+local HeavyOilPlasticRecipe = {
   type = "recipe",
   name = "alternative-plastic",
-  energy_required = 1,
+  energy_required = 0.5,
   enabled = false,
   category = "chemistry",
-  ingredients = {{type = "fluid", name = "petroleum-gas", amount = 20}, {type = "fluid", name = "heavy-oil", amount = 20}},
+  ingredients = {{type = "fluid", name = "petroleum-gas", amount = 10}, {type = "fluid", name = "heavy-oil", amount = 5}},
   results = {
-    {type = item, name = "plastic-bar", amount = 2, probability = 0.9},
+    {type = item, name = "plastic-bar", amount = 1, probability = 0.9},
     {type = item, name = "spoiled-plastic", amount = 2, probability = 0.1}
-  }
+  },
+  main_product = "plastic-bar"
 
+}
+
+local SpoiledPlasticRecycling = {
+  type = "recipe",
+  name = "plastic-recycling",
+  energy_required = 5,
+  enabled = false,
+  category = "chemistry",
+  ingredients = {{type = "fluid", name = "steam", amount = 10}, {name = "spoiled-plastic", amount = 1}},
+  results = {
+    {type = item, name = "plastic-bar", amount = 1, probability = 0.5},
+    {type = item, name = "spoiled-plastic", amount = 1, probability = 0.5}
+  },
+  main_product = "plastic-bar"
 }
 
 local CoalExperimentationResearch = {
@@ -147,7 +162,7 @@ local SolidFuelExperimentationResearch = {
   icon = "__AdvancedFuelProcessing__/graphics/Solid_fuel.png",
   icon_size = 64, icon_mipmaps = 4,
   visible_when_disabled = true,
-  prerequistes = {"advanced-oil-processing"},
+  prerequistes = {"advanced-oil-processing","Coal-experimentation-research"},
   effects =
   {
     {
@@ -170,6 +185,7 @@ local SolidFuelExperimentationResearch = {
 
 
 table.insert(data.raw.technology["rocket-fuel"].effects,{type = "unlock-recipe",recipe = "llr-rocket-fuel"})
-table.insert(data.raw.technology["plastics"].effects,{type = "unlock-recipe",recipe = "HeavyOilPlaticsRecipe"})
+table.insert(data.raw.technology["plastics"].effects,{type = "unlock-recipe",recipe = "alternative-plastic"})
+table.insert(data.raw.technology["plastics"].effects,{type = "unlock-recipe",recipe = "plastic-recycling"})
 
-data:extend{VehicleFuel, SolidHeavyOil, SolidHeavyOilRecipe, SolidLightOil, SolidLightOilRecipe, SolidCoal, SolidCoalRecipe, llrRocketFuel, llrRocketFuelRecipe, SpoiledPlastic, HeavyOilPlaticsRecipe, CoalExperimentationResearch, SolidFuelExperimentationResearch}
+data:extend{VehicleFuel, SolidHeavyOil, SolidHeavyOilRecipe, SolidLightOil, SolidLightOilRecipe, SolidCoal, SolidCoalRecipe, llrRocketFuel, llrRocketFuelRecipe, SpoiledPlastic, HeavyOilPlasticRecipe, SpoiledPlasticRecycling, CoalExperimentationResearch, SolidFuelExperimentationResearch}
