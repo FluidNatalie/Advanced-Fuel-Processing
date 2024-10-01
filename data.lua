@@ -192,7 +192,7 @@ table.insert(data.raw.technology["rocket-fuel"].effects,{type = "unlock-recipe",
 table.insert(data.raw.technology["plastics"].effects,{type = "unlock-recipe",recipe = "alternative-plastic"})
 table.insert(data.raw.technology["plastics"].effects,{type = "unlock-recipe",recipe = "plastic-recycling"})
 
-data.raw["recipe"]["plastic-bar"].results = {{type = item, name = "plastic-bar", amount = 2, probability = 0.5},{type = item, name = "spoiled-plastic", amount = 2, probability = 0.5}}
+data.raw["recipe"]["plastic-bar"].results = {{type = item, name = "plastic-bar", amount = 2, probability = 0.9},{type = item, name = "spoiled-plastic", amount = 4, probability = 0.1}}
 data.raw["recipe"]["plastic-bar"].main_product = "plastic-bar"
 
 data.raw["car"]["car"].burner.fuel_categories = {"vehicle-fuel","chemical"}
