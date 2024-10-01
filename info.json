@@ -1,6 +1,6 @@
 {
   "name": "AdvancedFuelProcessing",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "title": "Advanced Fuel Processing and Extra Chemistry",
   "author": "FluidNatalie",
   "factorio_version": "1.1",
@@ -10,5 +10,5 @@
 	"base >= 1.1",
 	"LunarLandings"
   ],
-  "description": "Adds a recipe for solid rocket fuel in the form of refined solid fuel back to the game."
+  "description": "Adds in new types of fuels between solid fuel and rocket fuel (now renamed to refined solid fuel) for use in vehicles. Makes some changes to plastic making it more difficult. (This will be balanced in the future)"
 }

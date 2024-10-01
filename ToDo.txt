@@ -1,8 +1,4 @@
 To do:
 
-Change the recipe name to fit
-Make new mod icon
-Make the fuel useable
-Consider splitting the data file into multiple files
-
-Update the local file
+- Consider splitting the data file into multiple files
+- Update the local file
