@@ -55,7 +55,7 @@ local SolidCoal = {
     name = "solid-coal",
     icon = "__AdvancedFuelProcessing__/graphics/Solid_coal.png",
     icon_size = 64, icon_mipmaps = 4,
-    fuel_category = "vehicle-fuel",
+    fuel_category = "chemical",
     fuel_value = "40MJ",
     fuel_acceleration_multiplier = 1.00,
     fuel_top_speed_multiplier = 1.30,
@@ -150,5 +150,6 @@ table.insert(data.raw.technology["rocket-fuel"].effects,{type = "unlock-recipe",
 data.raw["car"]["car"].burner.fuel_categories = {"vehicle-fuel","chemical"}
 data.raw["car"]["tank"].burner.fuel_categories = {"vehicle-fuel","chemical"}
 data.raw["locomotive"]["locomotive"].burner.fuel_categories = {"vehicle-fuel","chemical"}
+data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1.2
 
 data:extend{VehicleFuel, SolidHeavyOil, SolidHeavyOilRecipe, SolidLightOil, SolidLightOilRecipe, SolidCoal, SolidCoalRecipe, llrRocketFuel, llrRocketFuelRecipe, CoalExperimentationResearch, SolidFuelExperimentationResearch}
