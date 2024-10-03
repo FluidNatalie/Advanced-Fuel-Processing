@@ -1,4 +1,0 @@
-To do:
-
-- Consider splitting the data file into multiple files
-- Update the local file

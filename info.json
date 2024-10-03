@@ -10,5 +10,5 @@
 	"base >= 1.1",
 	"LunarLandings"
   ],
-  "description": "Adds in new types of fuels between solid fuel and rocket fuel (now renamed to refined solid fuel) for use in vehicles. Makes some changes to plastic making it more difficult. (This will be balanced in the future)"
+  "description": "Adds in new types of fuels between solid fuel and rocket fuel (now renamed to refined solid fuel) for use in vehicles."
 }
