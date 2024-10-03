@@ -1,0 +1,16 @@
+{
+    "factorio.versions": [
+        {
+            "name": "System",
+            "factorioPath": "/Applications/factorio.app/Contents/MacOS/factorio",
+            "active": true
+        }
+    ],
+    "Lua.workspace.library": [
+        "/Applications/factorio.app/Contents/data"
+    ],
+    "Lua.workspace.userThirdParty": [
+        "/Users/natenatalieparker/Library/Application Support/Code/User/workspaceStorage/28773961914a2a80fb8374e58221c81f/justarandomgeek.factoriomod-debug/sumneko-3rd"
+    ],
+    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+}

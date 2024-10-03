@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 2024-10-01
+Date: 2024-10-03
   Features:
     - Initial release. 
     - Adds a  recipe for rocket fuel as an item (named "Refined Solid Fuel") for use in trains and other vehicles.
